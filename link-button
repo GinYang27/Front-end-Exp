@@ -1,0 +1,4 @@
+<!--Create a button as a link -->
+<a href="#/new-page.html" class="btn btn-primary">
+    Click
+</a>

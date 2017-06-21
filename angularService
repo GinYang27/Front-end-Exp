@@ -1,0 +1,2 @@
+If I inject a service into controller, it will keep for the whole session.
+In other word, service run only once!

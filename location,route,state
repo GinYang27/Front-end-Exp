@@ -1,0 +1,17 @@
+$locationChangeStart: this uses the $location provider and broadcasts whenever the URL changes. 
+Location refers more to a Path of a specific URL. 
+It's more like plain JavaScript, you can change to any path in your application 
+and it doesn't matter if it's defined on your app as route or state.
+
+$routeChangeStart: this uses the $route provider, and it's the same, 
+it broadcasts when the route changes (default Angular router used with ngRoute). 
+This is used to do a link between controllers and views.
+
+$stateChangeStart: it happens when your state changes, and this broadcasts when a transition begins. 
+It is used by ui-router which provides a different (more advanced) implementation of routeprovider. 
+States allow you to map and access different information about different states 
+and you can easily pass information between states via $stateParams.
+
+They are quite similar, in fact they share the same names, but the main differences depends on the routing your application uses. 
+If you are using angular router then stick to routes, however, if you are using ui-router, stick to states. 
+This is practical advice I can give you.

@@ -15,6 +15,7 @@ self.selectedTimeOption = {
 
 function packTimeOption() {
     self.newTimeOption = $filter('filter')(self.timeOptions, {serveTime: self.selectedTimeOption.serverTime});
+    self.priamryPrice = $filter('filter')(self.serveDetailContent.timeOptionModels, {serveTime: $scope.selectedServeTime})[0].price;
 }
 
 </script>

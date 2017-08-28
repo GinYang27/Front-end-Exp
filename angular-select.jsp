@@ -1,4 +1,6 @@
- <select class="form-control" ng-model="selectedServeTime" name="selectedServeTime" ng-change="setServeTime()" required flex
-      ng-options="(option.price | currency) + ' / ' + (option.serveTime + 'min') for option in ctrl.cartItem.shoppingCartTimeOptionModels">
-      <option value="" selected disabled>Select time long</option>
-  </select>
+<select class="form-control" ng-model="selectedTimeOption" name="selectedTimeOption" ng-change="setServeTime()" required flex
+    ng-options="option as ((option.price | currency) + ' / ' + (option.serveTime + 'min')) for option in ctrl.cartItem.shoppingCartTimeOptionModels track by option.serveTime">
+</select>
+
+
+<!-- NOTE: parenthese and track by is required -->

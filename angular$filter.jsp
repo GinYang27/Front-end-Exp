@@ -21,3 +21,4 @@ function packTimeOption() {
 </script>
 
 //$filter syntax
+$filter actually create a reference refer to the same object. So if I modified the filter object, original one will be affected.

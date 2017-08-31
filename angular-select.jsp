@@ -18,4 +18,11 @@
     color: #bdbdbd;
 }
 
+I find a bug, if I used track by s.isAvilable, it will cause some bugs on ng-model's value, so I changed it to 
+ng-options="s.startTime disable when s.isAvailable == false for s in ctrl.startTimeList track by s.startTime"
+
+And for css:
+.ic-select-time option:disabled {
+    color: #bdbdbd;
+}
 
